@@ -1,0 +1,16 @@
+Before you start:
+- These instructions are for mac users ONLY!!!!
+- Must have both Homebrew and Cask installed
+
+Instructions from the command line:
+$ brew install pandoc
+$ brew cask install mactex
+    Install can take awhile.
+    It will probably ask you for your password at some point.
+$ cd $HOME
+$ echo 'export PATH='export PATH=/usr/local/texlive/2017:$PATH' >> .bash_profile
+- close and reopen Terminal
+$ jupyter notebook
+
+Navigate to the notebook you'd like to make into a PDF, open it, and under the 'File' menu look under 'Download as'.
+There should be something like 'PDF via LaTex', click on it and your pdf should be waiting for you in your 'Downloads' folder.
